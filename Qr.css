@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(231, 254, 254);
+    font-family: Arial;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    width: 250px;
+    padding: 10px 3px; /* Combined padding shorthand */
+  }
+  
+  .box {
+    background-color: white;
+    width: 220px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Adjust the flex direction */
+    justify-content: space-between; /* Move items to top and bottom */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    position: relative; /* Change position to relative */
+    z-index: 1; /* Set z-index for the box */
+  }
+  
+  p {
+    margin: 0;
+    max-width: 100%; /* Ensure the paragraph doesn't overflow the box */
+    position: absolute; /* Position the <p> absolutely */
+    bottom: 18px; /* Position at the bottom */
+    color:rgb(130, 130, 130)
+  }
+  
+  h1 {
+    font-size: 15px;
+    margin: 0; /* Reset margin */
+    font-size: 15px;
+    position: relative; /* Position the <h1> absolutely */
+    top: 320px; /* Adjust the top position */
+    bottom:0%
+    left:300px; /* Adjust the left position */
+    right:-130px;
+    transform: translate(-50%, -50%); /* Center the <h1> inside the box */
+    z-index:2; /* Set a higher z-index for the h1 to bring it to the front */
+    width:100%;
+    text-align:center;
+}
+  
+.qr img {
+    max-width: 100%; /* Ensure the image does not exceed the box width */
+    max-height: 100%; /* Ensure the image does not exceed the box height */
+    width:auto; /* Allow the image to adjust its width proportionally */
+    height: auto; /* Allow the image to adjust its height proportionally */
+    border-radius: 17px;
+}
+
+
+
+
+  
